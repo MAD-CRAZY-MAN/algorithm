@@ -55,7 +55,8 @@ int main(void)
 		}
 		else
 		{
-			printf("%s", "잘못된 명령입니다.\n\n");
+			if(command != "quit")
+				printf("%s", "잘못된 명령입니다.\n\n");
 		}
 	}
 	return 0;
